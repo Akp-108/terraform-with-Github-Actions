@@ -1,0 +1,17 @@
+name: Terraform
+
+on: 
+  push: 
+    branches: ["main"]
+
+  workflow_disparch:
+
+
+jobs:
+  terraform:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkou@v3
+      - name: run a one-line script
+        run: echo this is terraform code
+      
